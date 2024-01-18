@@ -1,0 +1,67 @@
+<button
+  type="button"
+  class="btn btn-success btn-lg shadow shadow-lg hover hover-dark rounded"
+  data-bs-toggle="modal"
+  data-bs-target="#personaModal"
+>
+  Agregar Chofer
+</button>
+
+<div
+  class="modal fade text-white"
+  id="personaModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="personaModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-bg-dark">
+        <h5 class="modal-title" id="personaModalLabel">Formulario de Chofer</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body bg-dark-subtle text-black-50">
+        <form>
+          <div class="form-group">
+            <label for="dni">DNI:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="dni"
+              placeholder="Ingrese el DNI"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="nombres">Nombres:</label>
+            <input
+              type="text"
+              class="form-control"
+              name="nombres"
+              placeholder="Ingrese los nombres"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="fechaIngreso">Fecha de Ingreso:</label>
+            <input
+              type="date"
+              class="form-control"
+              name="fechaIngreso"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-dark border border-success mt-3">
+            Guardar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
